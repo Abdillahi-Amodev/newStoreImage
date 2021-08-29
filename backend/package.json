@@ -4,8 +4,10 @@
   "description": "",
   "main": "server.js",
   "scripts": {
+    "frontend-install":"npm install --prefix frontend",
     "dev": "nodemon server.js",
     "start": "node server.js",
+    "frontend":"npm start --prefix",
     "heroku-postbuild":"NPM_CONFIG_PRODUCTION=false npm install --prefixe frontend && npm run build --prefix frontend"
   },
   "keywords": [],
